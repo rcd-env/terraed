@@ -1,0 +1,38 @@
+{
+  "questTemplates": {
+    "waste": [
+      {
+        "title": "Plastic-Free Week Challenge",
+        "summary": "Eliminate single-use plastics from your daily routine for one week",
+        "instructions": "Track and document your plastic usage, find alternatives, and measure your impact",
+        "points": 25,
+        "category": "waste",
+        "difficulty": "medium",
+        "estimatedTime": 60
+      }
+    ],
+    "energy": [
+      {
+        "title": "Home Energy Audit",
+        "summary": "Conduct a comprehensive energy audit of your home",
+        "instructions": "Check all appliances, lighting, and heating systems. Document findings and propose improvements",
+        "points": 30,
+        "category": "energy",
+        "difficulty": "hard",
+        "estimatedTime": 90
+      }
+    ]
+  },
+  "verificationStubs": {
+    "plant": {
+      "confidence": 0.87,
+      "labels": ["plant", "sapling", "soil", "garden"],
+      "autoDecision": "pass"
+    },
+    "waste": {
+      "confidence": 0.91,
+      "labels": ["container", "reusable", "sustainable"],
+      "autoDecision": "pass"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "students": [
+    {
+      "id": "student_001",
+      "name": "Emma Chen",
+      "email": "emma.chen@school.edu",
+      "grade": "10th Grade",
+      "school": "Green Valley High School",
+      "points": 185,
+      "monthlyPoints": 185,
+      "level": 3,
+      "levelTitle": "Nature Guardian",
+      "streak": 7,
+      "joinedAt": "2024-09-01T00:00:00Z",
+      "lastActive": "2025-01-19T16:30:00Z",
+      "completedQuests": ["quest_001", "quest_002", "quest_004", "quest_005"],
+      "badges": ["first_quest", "streak_week", "tree_planter", "waste_warrior"],
+      "preferences": {
+        "notifications": true,
+        "publicProfile": true,
+        "shareProgress": true
+      }
+    },
+    {
+      "id": "student_002",
+      "name": "Marcus Johnson",
+      "email": "marcus.johnson@school.edu",
+      "grade": "11th Grade",
+      "school": "Green Valley High School",
+      "points": 220,
+      "monthlyPoints": 95,
+      "level": 4,
+      "levelTitle": "Earth Protector",
+      "streak": 12,
+      "joinedAt": "2024-08-15T00:00:00Z",
+      "lastActive": "2025-01-19T14:20:00Z",
+      "completedQuests": ["quest_001", "quest_002", "quest_003", "quest_004", "quest_005"],
+      "badges": ["first_quest", "streak_week", "streak_month", "energy_saver", "transport_hero"],
+      "preferences": {
+        "notifications": true,
+        "publicProfile": true,
+        "shareProgress": true
+      }
+    },
+    {
+      "id": "student_003",
+      "name": "Sophia Rodriguez",
+      "email": "sophia.rodriguez@school.edu",
+      "grade": "9th Grade",
+      "school": "Green Valley High School",
+      "points": 145,
+      "monthlyPoints": 145,
+      "level": 2,
+      "levelTitle": "Green Sprout",
+      "streak": 3,
+      "joinedAt": "2024-10-01T00:00:00Z",
+      "lastActive": "2025-01-19T12:15:00Z",
+      "completedQuests": ["quest_001", "quest_002", "quest_005"],
+      "badges": ["first_quest", "tree_planter", "transport_hero"],
+      "preferences": {
+        "notifications": true,
+        "publicProfile": false,
+        "shareProgress": true
+      }
+    },
+    {
+      "id": "student_004",
+      "name": "Alex Kim",
+      "email": "alex.kim@school.edu",
+      "grade": "12th Grade",
+      "school": "Green Valley High School",
+      "points": 320,
+      "monthlyPoints": 80,
+      "level": 5,
+      "levelTitle": "Climate Champion",
+      "streak": 21,
+      "joinedAt": "2024-07-01T00:00:00Z",
+      "lastActive": "2025-01-19T18:45:00Z",
+      "completedQuests": ["quest_001", "quest_002", "quest_003", "quest_004", "quest_005"],
+      "badges": [
+        "first_quest",
+        "streak_week",
+        "streak_month",
+        "tree_planter",
+        "waste_warrior",
+        "energy_saver",
+        "water_hero",
+        "transport_hero"
+      ],
+      "preferences": {
+        "notifications": true,
+        "publicProfile": true,
+        "shareProgress": true
+      }
+    },
+    {
+      "id": "student_005",
+      "name": "Maya Patel",
+      "email": "maya.patel@school.edu",
+      "grade": "10th Grade",
+      "school": "Green Valley High School",
+      "points": 75,
+      "monthlyPoints": 75,
+      "level": 2,
+      "levelTitle": "Green Sprout",
+      "streak": 1,
+      "joinedAt": "2024-12-01T00:00:00Z",
+      "lastActive": "2025-01-19T10:30:00Z",
+      "completedQuests": ["quest_002", "quest_005"],
+      "badges": ["first_quest", "waste_warrior"],
+      "preferences": {
+        "notifications": true,
+        "publicProfile": true,
+        "shareProgress": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "leaderboard": [
+    {
+      "userId": "student2",
+      "name": "Maya Patel",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "points": 189,
+      "rank": 1,
+      "streak": 3,
+      "questsCompleted": 8
+    },
+    {
+      "userId": "student1",
+      "name": "Alex Chen",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "points": 145,
+      "rank": 2,
+      "streak": 5,
+      "questsCompleted": 6
+    },
+    {
+      "userId": "student3",
+      "name": "Jordan Smith",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "points": 98,
+      "rank": 3,
+      "streak": 1,
+      "questsCompleted": 4
+    },
+    {
+      "userId": "student4",
+      "name": "Emma Wilson",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "points": 87,
+      "rank": 4,
+      "streak": 2,
+      "questsCompleted": 4
+    },
+    {
+      "userId": "student5",
+      "name": "Liam Rodriguez",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "points": 76,
+      "rank": 5,
+      "streak": 1,
+      "questsCompleted": 3
+    }
+  ]
+}

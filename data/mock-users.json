@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": "student1",
+      "email": "student@demo.com",
+      "name": "Alex Chen",
+      "type": "student",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "school": "Green Valley High",
+      "grade": 9,
+      "points": 145,
+      "streak": 5,
+      "monthlyPoints": 145,
+      "lastActivity": "2025-01-19T10:30:00Z",
+      "consentGiven": true,
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "teacher1",
+      "email": "teacher@demo.com",
+      "name": "Ms. Sarah Johnson",
+      "type": "teacher",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "school": "Green Valley High",
+      "points": 0,
+      "streak": 0,
+      "monthlyPoints": 0,
+      "lastActivity": "2025-01-19T09:00:00Z",
+      "consentGiven": true,
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "student2",
+      "email": "maya@demo.com",
+      "name": "Maya Patel",
+      "type": "student",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "school": "Green Valley High",
+      "grade": 10,
+      "points": 189,
+      "streak": 3,
+      "monthlyPoints": 189,
+      "lastActivity": "2025-01-19T08:45:00Z",
+      "consentGiven": true,
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "student3",
+      "email": "jordan@demo.com",
+      "name": "Jordan Smith",
+      "type": "student",
+      "avatar": "/placeholder.svg?height=40&width=40",
+      "school": "Green Valley High",
+      "grade": 8,
+      "points": 98,
+      "streak": 1,
+      "monthlyPoints": 98,
+      "lastActivity": "2025-01-18T16:20:00Z",
+      "consentGiven": true,
+      "createdAt": "2025-01-01T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "verificationResults": {
+    "quest_001": {
+      "status": "auto_pass",
+      "confidence": 0.95,
+      "checks": {
+        "fileValid": true,
+        "exifValid": true,
+        "gpsValid": true,
+        "duplicateCheck": false,
+        "contentModeration": true,
+        "environmentalMatch": true
+      },
+      "feedback": "Excellent work! Your photo clearly shows a native sapling being planted in appropriate soil. The GPS coordinates confirm this was taken at your school location.",
+      "aiAnalysis": "Image shows a young tree sapling with healthy root system being planted in dark, nutrient-rich soil. Native species identified as Oak sapling based on leaf structure.",
+      "processingTime": 2.3
+    },
+    "quest_002": {
+      "status": "review",
+      "confidence": 0.72,
+      "checks": {
+        "fileValid": true,
+        "exifValid": true,
+        "gpsValid": true,
+        "duplicateCheck": false,
+        "contentModeration": true,
+        "environmentalMatch": false
+      },
+      "feedback": "Good effort! However, we noticed some plastic items in your lunch. For full credit, try to eliminate all single-use plastics. Consider using reusable containers for all items.",
+      "aiAnalysis": "Image shows lunch with mostly reusable containers but contains plastic water bottle and plastic utensils. Partial compliance with zero-waste requirements.",
+      "processingTime": 3.1
+    },
+    "quest_003": {
+      "status": "rejected",
+      "confidence": 0.45,
+      "checks": {
+        "fileValid": true,
+        "exifValid": false,
+        "gpsValid": false,
+        "duplicateCheck": true,
+        "contentModeration": true,
+        "environmentalMatch": false
+      },
+      "feedback": "This submission cannot be accepted. The photo appears to be taken from the internet (no EXIF data) and doesn't match the quest requirements. Please take an original photo of your own energy audit.",
+      "aiAnalysis": "Image appears to be a stock photo of electrical meters. No original EXIF data found, suggesting downloaded image rather than original photograph.",
+      "processingTime": 1.8
+    },
+    "quest_004": {
+      "status": "auto_pass",
+      "confidence": 0.88,
+      "checks": {
+        "fileValid": true,
+        "exifValid": true,
+        "gpsValid": true,
+        "duplicateCheck": false,
+        "contentModeration": true,
+        "environmentalMatch": true
+      },
+      "feedback": "Outstanding community involvement! Your photo shows active participation in the garden project with proper tools and technique.",
+      "aiAnalysis": "Multiple students working together in community garden setting. Proper gardening tools visible, healthy soil preparation evident.",
+      "processingTime": 2.7
+    },
+    "quest_005": {
+      "status": "review",
+      "confidence": 0.68,
+      "checks": {
+        "fileValid": true,
+        "exifValid": true,
+        "gpsValid": true,
+        "duplicateCheck": false,
+        "contentModeration": true,
+        "environmentalMatch": true
+      },
+      "feedback": "Great start on plastic-free living! We can see your efforts, but the photo could be clearer. Consider taking multiple angles to better showcase your plastic-free alternatives.",
+      "aiAnalysis": "Image shows various reusable items and alternatives to plastic products. Some items partially obscured, making complete verification challenging.",
+      "processingTime": 2.9
+    }
+  },
+  "testCases": [
+    {
+      "id": "test_valid_submission",
+      "name": "Valid Submission - Auto Pass",
+      "description": "Student submits high-quality photo with valid EXIF, GPS, and content matching quest requirements",
+      "questId": "quest_001",
+      "expectedStatus": "auto_pass",
+      "mockImage": "/student-planting-sapling-in-school-garden.jpg",
+      "gpsCoords": { "lat": 40.7128, "lng": -74.006 },
+      "timestamp": "2025-01-19T14:30:00Z"
+    },
+    {
+      "id": "test_old_exif",
+      "name": "Old EXIF Data - Review Required",
+      "description": "Photo taken more than 24 hours ago, requires manual review",
+      "questId": "quest_002",
+      "expectedStatus": "review",
+      "mockImage": "/zero-waste-lunch-in-reusable-containers.jpg",
+      "gpsCoords": { "lat": 40.7128, "lng": -74.006 },
+      "timestamp": "2025-01-17T10:00:00Z"
+    },
+    {
+      "id": "test_duplicate",
+      "name": "Duplicate Submission - Rejected",
+      "description": "Same image hash found in previous submissions",
+      "questId": "quest_003",
+      "expectedStatus": "rejected",
+      "mockImage": "/energy-audit-duplicate.jpg",
+      "gpsCoords": { "lat": 40.7128, "lng": -74.006 },
+      "timestamp": "2025-01-19T16:00:00Z"
+    },
+    {
+      "id": "test_monthly_cap",
+      "name": "Monthly Cap Exceeded",
+      "description": "Student has already earned 200 points this month",
+      "questId": "quest_004",
+      "expectedStatus": "auto_pass",
+      "pointsBlocked": true,
+      "mockImage": "/students-planting-native-sapling-in-school-garden-.jpg",
+      "gpsCoords": { "lat": 40.7128, "lng": -74.006 },
+      "timestamp": "2025-01-19T17:00:00Z"
+    },
+    {
+      "id": "test_voucher_redemption",
+      "name": "Voucher Redemption Flow",
+      "description": "Student redeems points for voucher and receives QR code",
+      "rewardId": "reward_001",
+      "expectedVoucherCode": "TERRA-2025-BK47",
+      "userBalance": 50,
+      "rewardCost": 25
+    }
+  ]
+}

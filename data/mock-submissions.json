@@ -1,0 +1,46 @@
+{
+  "submissions": [
+    {
+      "id": "sub1",
+      "questId": "q1",
+      "userId": "student1",
+      "imageUrl": "/student-planting-sapling-in-school-garden.jpg",
+      "caption": "I planted a native oak sapling in our school garden today! It was harder than I thought to dig the hole, but my teacher helped me. I made sure to water it well and I'm excited to watch it grow.",
+      "gpsCoords": { "lat": 40.7128, "lng": -74.006 },
+      "status": "auto_pass",
+      "verificationReport": {
+        "confidence": 0.89,
+        "labels": ["plant", "sapling", "soil", "hands", "garden"],
+        "reasons": [],
+        "pHashScore": 0.15,
+        "exifValid": true,
+        "gpsValid": true,
+        "duplicateCheck": true,
+        "autoDecision": "pass"
+      },
+      "pointsAwarded": 25,
+      "submittedAt": "2025-01-18T10:30:00Z"
+    },
+    {
+      "id": "sub2",
+      "questId": "q2",
+      "userId": "student1",
+      "imageUrl": "/zero-waste-lunch-in-reusable-containers.jpg",
+      "caption": "Here's my zero-waste lunch! I used glass containers for my sandwich and salad, a metal water bottle, and cloth napkins. No plastic packaging at all!",
+      "gpsCoords": { "lat": 40.7128, "lng": -74.006 },
+      "status": "auto_pass",
+      "verificationReport": {
+        "confidence": 0.92,
+        "labels": ["container", "food", "reusable", "lunch", "sustainable"],
+        "reasons": [],
+        "pHashScore": 0.08,
+        "exifValid": true,
+        "gpsValid": true,
+        "duplicateCheck": true,
+        "autoDecision": "pass"
+      },
+      "pointsAwarded": 20,
+      "submittedAt": "2025-01-17T14:20:00Z"
+    }
+  ]
+}

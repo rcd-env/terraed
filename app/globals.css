@@ -1,0 +1,184 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* TerraEd brand color palette */
+  --terra-primary: #0b6e4f; /* deep eco-green */
+  --terra-accent: #ffb703; /* sunrise amber */
+  --terra-neutral-dark: #0f172a; /* midnight slate */
+  --terra-neutral-light: #e6f4ee; /* soft seafoam */
+  --terra-surface: #ffffff;
+  --terra-success: #10b981;
+  --terra-muted: #6b7280;
+
+  /* Updated design tokens for TerraEd */
+  --background: var(--terra-surface);
+  --foreground: var(--terra-neutral-dark);
+  --card: var(--terra-surface);
+  --card-foreground: var(--terra-neutral-dark);
+  --popover: var(--terra-surface);
+  --popover-foreground: var(--terra-neutral-dark);
+  --primary: var(--terra-primary);
+  --primary-foreground: var(--terra-surface);
+  --secondary: var(--terra-neutral-light);
+  --secondary-foreground: var(--terra-neutral-dark);
+  --muted: var(--terra-neutral-light);
+  --muted-foreground: var(--terra-muted);
+  --accent: var(--terra-accent);
+  --accent-foreground: var(--terra-neutral-dark);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #e5e7eb;
+  --input: #f3f4f6;
+  --ring: var(--terra-primary);
+  --success: var(--terra-success);
+  --success-foreground: var(--terra-surface);
+
+  --chart-1: var(--terra-primary);
+  --chart-2: var(--terra-accent);
+  --chart-3: var(--terra-success);
+  --chart-4: var(--terra-muted);
+  --chart-5: var(--terra-neutral-light);
+
+  --radius: 0.875rem; /* 14px rounded corners */
+
+  --sidebar: var(--terra-surface);
+  --sidebar-foreground: var(--terra-neutral-dark);
+  --sidebar-primary: var(--terra-primary);
+  --sidebar-primary-foreground: var(--terra-surface);
+  --sidebar-accent: var(--terra-neutral-light);
+  --sidebar-accent-foreground: var(--terra-neutral-dark);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--terra-primary);
+}
+
+.dark {
+  --background: var(--terra-neutral-dark);
+  --foreground: var(--terra-surface);
+  --card: #1e293b;
+  --card-foreground: var(--terra-surface);
+  --popover: #1e293b;
+  --popover-foreground: var(--terra-surface);
+  --primary: var(--terra-primary);
+  --primary-foreground: var(--terra-surface);
+  --secondary: #334155;
+  --secondary-foreground: var(--terra-surface);
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+  --accent: var(--terra-accent);
+  --accent-foreground: var(--terra-neutral-dark);
+  --border: #334155;
+  --input: #334155;
+  --ring: var(--terra-primary);
+
+  --sidebar: #1e293b;
+  --sidebar-foreground: var(--terra-surface);
+  --sidebar-primary: var(--terra-primary);
+  --sidebar-primary-foreground: var(--terra-surface);
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: var(--terra-surface);
+  --sidebar-border: #334155;
+  --sidebar-ring: var(--terra-primary);
+}
+
+@theme inline {
+  /* Updated font variables for TerraEd typography */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-inter);
+  --font-mono: var(--font-inter);
+  --font-display: var(--font-poppins);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground leading-relaxed;
+  }
+
+  /* TerraEd typography scale */
+  .text-display {
+    font-family: var(--font-poppins);
+    @apply font-semibold;
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-lg;
+  }
+
+  .terra-gradient {
+    background: linear-gradient(135deg, var(--terra-primary) 0%, var(--terra-success) 100%);
+  }
+}
+
+/* Custom animations for TerraEd */
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.animate-confetti {
+  animation: confetti 3s ease-out forwards;
+}
+
+@keyframes pulse-success {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-success {
+  animation: pulse-success 0.6s ease-in-out;
+}

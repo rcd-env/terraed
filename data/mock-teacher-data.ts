@@ -1,0 +1,135 @@
+export const teacherClassStats = {
+  totalStudents: 28,
+  activeQuests: 5,
+  pendingSubmissions: 12,
+  completedQuests: 47,
+  averageEngagement: 78,
+  monthlyGrowth: 15,
+}
+
+export const teacherStudentProgress = [
+  {
+    id: "student1",
+    name: "Alex Chen",
+    avatar: "/placeholder.svg?height=40&width=40",
+    points: 145,
+    questsCompleted: 6,
+    lastActive: "2025-01-19T10:30:00Z",
+    streak: 5,
+    grade: 9,
+  },
+  {
+    id: "student2",
+    name: "Maya Patel",
+    avatar: "/placeholder.svg?height=40&width=40",
+    points: 189,
+    questsCompleted: 8,
+    lastActive: "2025-01-19T08:45:00Z",
+    streak: 3,
+    grade: 10,
+  },
+  {
+    id: "student3",
+    name: "Jordan Smith",
+    avatar: "/placeholder.svg?height=40&width=40",
+    points: 98,
+    questsCompleted: 4,
+    lastActive: "2025-01-18T16:20:00Z",
+    streak: 1,
+    grade: 8,
+  },
+  {
+    id: "student4",
+    name: "Emma Wilson",
+    avatar: "/placeholder.svg?height=40&width=40",
+    points: 167,
+    questsCompleted: 7,
+    lastActive: "2025-01-19T14:15:00Z",
+    streak: 4,
+    grade: 9,
+  },
+  {
+    id: "student5",
+    name: "Liam Rodriguez",
+    avatar: "/placeholder.svg?height=40&width=40",
+    points: 134,
+    questsCompleted: 5,
+    lastActive: "2025-01-19T11:20:00Z",
+    streak: 2,
+    grade: 10,
+  },
+]
+
+export const teacherQuestAnalytics = [
+  {
+    questId: "q1",
+    title: "Plant a Native Sapling",
+    assigned: 28,
+    completed: 22,
+    pending: 4,
+    completionRate: 79,
+    avgRating: 4.6,
+  },
+  {
+    questId: "q2",
+    title: "Zero Waste Lunch Challenge",
+    assigned: 25,
+    completed: 18,
+    pending: 3,
+    completionRate: 72,
+    avgRating: 4.3,
+  },
+  {
+    questId: "q3",
+    title: "Energy Audit at Home",
+    assigned: 28,
+    completed: 15,
+    pending: 8,
+    completionRate: 54,
+    avgRating: 4.1,
+  },
+  {
+    questId: "q4",
+    title: "Plastic-Free Week",
+    assigned: 22,
+    completed: 19,
+    pending: 2,
+    completionRate: 86,
+    avgRating: 4.8,
+  },
+]
+
+export const pendingSubmissions = [
+  {
+    id: "sub1",
+    studentName: "Alex Chen",
+    questTitle: "Plant a Native Sapling",
+    submittedAt: "2025-01-19T10:30:00Z",
+    type: "photo",
+    status: "pending",
+  },
+  {
+    id: "sub2",
+    studentName: "Emma Wilson",
+    questTitle: "Zero Waste Lunch Challenge",
+    submittedAt: "2025-01-19T09:15:00Z",
+    type: "photo",
+    status: "pending",
+  },
+  {
+    id: "sub3",
+    studentName: "Jordan Smith",
+    questTitle: "Energy Audit at Home",
+    submittedAt: "2025-01-18T16:45:00Z",
+    type: "text",
+    status: "pending",
+  },
+]
+
+export const classImpactMetrics = {
+  totalTreesPlanted: 47,
+  totalWasteCollected: 156.8,
+  totalCarbonSaved: 234.5,
+  totalWaterSaved: 892,
+  totalEnergyConserved: 145.2,
+}

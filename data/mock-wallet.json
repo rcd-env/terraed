@@ -1,0 +1,103 @@
+{
+  "balance": 85,
+  "monthlyEarned": 85,
+  "monthlyLimit": 200,
+  "transactions": [
+    {
+      "id": "tx_001",
+      "type": "earned",
+      "amount": 30,
+      "description": "Completed: Plant a Native Tree",
+      "timestamp": "2025-01-15T10:30:00Z",
+      "questId": "quest_001"
+    },
+    {
+      "id": "tx_002",
+      "type": "earned",
+      "amount": 20,
+      "description": "Completed: Zero Waste Lunch Challenge",
+      "timestamp": "2025-01-14T12:15:00Z",
+      "questId": "quest_002"
+    },
+    {
+      "id": "tx_003",
+      "type": "earned",
+      "amount": 10,
+      "description": "Completed: Energy Audit at Home",
+      "timestamp": "2025-01-13T16:45:00Z",
+      "questId": "quest_003"
+    },
+    {
+      "id": "tx_004",
+      "type": "redeemed",
+      "amount": -25,
+      "description": "Redeemed: Local Bookstore Voucher",
+      "timestamp": "2025-01-12T14:20:00Z",
+      "voucherCode": "TERRA-2025-BK47"
+    },
+    {
+      "id": "tx_005",
+      "type": "earned",
+      "amount": 30,
+      "description": "Completed: Community Garden Project",
+      "timestamp": "2025-01-11T09:00:00Z",
+      "questId": "quest_004"
+    },
+    {
+      "id": "tx_006",
+      "type": "earned",
+      "amount": 20,
+      "description": "Completed: Plastic-Free Week",
+      "timestamp": "2025-01-10T18:30:00Z",
+      "questId": "quest_005"
+    }
+  ],
+  "vouchers": [
+    {
+      "id": "voucher_001",
+      "code": "TERRA-2025-BK47",
+      "partner": "Local Bookstore",
+      "value": "$5 Off",
+      "status": "redeemed",
+      "redeemedAt": "2025-01-12T14:20:00Z"
+    }
+  ],
+  "availableRewards": [
+    {
+      "id": "reward_001",
+      "name": "Local Bookstore Voucher",
+      "description": "$5 off any purchase",
+      "cost": 25,
+      "partner": "Green Pages Bookstore",
+      "category": "education",
+      "available": true
+    },
+    {
+      "id": "reward_002",
+      "name": "Eco-Friendly Supplies Kit",
+      "description": "Reusable water bottle, bamboo utensils, and tote bag",
+      "cost": 50,
+      "partner": "EcoLife Store",
+      "category": "lifestyle",
+      "available": true
+    },
+    {
+      "id": "reward_003",
+      "name": "Plant Nursery Credit",
+      "description": "$10 credit for native plants",
+      "cost": 40,
+      "partner": "Native Gardens Nursery",
+      "category": "environment",
+      "available": true
+    },
+    {
+      "id": "reward_004",
+      "name": "Sustainable Fashion Discount",
+      "description": "15% off sustainable clothing",
+      "cost": 35,
+      "partner": "Earth Threads",
+      "category": "fashion",
+      "available": true
+    }
+  ]
+}
